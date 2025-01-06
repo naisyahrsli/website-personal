@@ -1,0 +1,90 @@
+
+body{
+     background-color: "#e2c5f6";
+	 
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	 background-position:center;
+	 background-size: 1738px 1230px;
+     background-image: url("images/batikbg2.png");
+	 
+	 
+}
+
+
+
+p{
+
+font-family: Courier New; 
+font-size: 21px;
+font-weight: bold;
+
+}
+
+}
+
+p.tajuk {
+
+ font-family: Lucida Handwriting; 
+ text-align:center;
+ color: red;
+ font-size:50px;
+
+}
+
+
+table {
+  border-collapse: collapse;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:15px
+}
+
+p {
+  margin: 0em;
+}
+
+$a-color: hsl(163, 59%, 34%);
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+p{
+  width:60%;
+  margin:20% auto;
+  font:300 1.15em/1.5 "Raleway", sans-serif;
+  color:darken(white, 80%);
+  text-shadow:0 1px 0 darken(white,8%);
+  border:1px solid darken(white,13%);
+  border-left:none;
+  border-right:none;
+  padding: 1em;
+}
+
+a{
+  color:$a-color;
+  text-shadow:0 1px 0 lighten($a-color,60%);
+  text-decoration:none;
+  border-bottom:1px dashed lighten($a-color, 15%);
+  display:inline-block;
+  position:relative;
+  padding:0 .2em;
+  transition:all 250ms;
+  z-index:1000;
+  &:before{
+    content:"";
+    z-index:-1;
+    width:100%;
+    height:0%;
+    background:rgba(lighten($a-color,20%),.16);
+    bottom:0;
+    left:0;
+    position:absolute;
+    transition:height 250ms;
+  }
+  &:hover{
+    border-color:transparent;
+    &:before{
+      height:100%;
+    }
+  }
+ 
+}
